@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+.main-step{
+  margin: 50px auto;
+  width: 960px;
+  display: flex;
+}
+
+.step-box{
+  width: 300px;
+  background-color: #EEEEEE;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+.step-number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF9A4B;
+  color: white;
+}
+
+.step1-image{
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.step2-image{
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.step3-image{
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+h3{
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+p{
+  display: block;
+}
+
+footer{
+  background-color: #AAAAAA;
+  height: 50px;
+}
+
+/*画面サイズが768px以下の際に適用される設定*/
+@media screen and (max-width: 768px){
+  header {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .main-step {
+    width: 100%;
+    display: block;
+
+  }
+  .step-box {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    
+  }
+  footer {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
